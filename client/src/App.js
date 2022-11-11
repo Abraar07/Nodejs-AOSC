@@ -1,6 +1,7 @@
 import React from "react";
 import { Container} from "@material-ui/core";
 import { BrowserRouter, Routes, Route,Navigate } from 'react-router-dom';
+import { GoogleOAuthProvider } from '@react-oauth/google';
 
 import Navbar from "./components/Navbar/Navbar";
 import Home from "./components/Home/Home";
@@ -14,10 +15,10 @@ function App() {
       <Container maxWidth="lg">
         <Navbar />
         <Routes>
-          <Route  path="/" exact component={Home}/>
-          <Route  path="Auth"  Component={Auth}/>
+          <Route  path="/"  element={<Home />}/>
+          <Route   path="/Auth"  element={<Auth />}/>
         </Routes>
-        <Home />
+        <GoogleOAuthProvider clientId="283138669990-5k99m2k4bv8j2hngk3j05ratviautpii.apps.googleusercontent.com">...</GoogleOAuthProvider>;
       </Container>
     </BrowserRouter>
    
