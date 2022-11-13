@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { GoogleLogin, GoogleLogout } from 'react-google-login';
 
-const clientId = "283138669990-5k99m2k4bv8j2hngk3j05ratviautpii.apps.googleusercontent.com";
+const clientId = "283138669990-16k4v0jovboq4c5896hevc4qiqbd2j74.apps.googleusercontent.com";
 
 function Google() {
 
